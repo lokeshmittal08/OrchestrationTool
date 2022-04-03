@@ -1,0 +1,28 @@
+03/29/2022 05:03:30 PM | WORKFLOW_SAMPLE_LOAD | INFO | starting the workflow name : WORKFLOW_SAMPLE_LOAD
+03/29/2022 05:03:30 PM | WORKFLOW_SAMPLE_LOAD | INFO | Aruguments Passed to workflow are {}
+03/29/2022 05:03:30 PM | WORKFLOW_SAMPLE_LOAD | DEBUG | Executing method : __main__workflow parameter are:{'workflow': {'workflow_id': 1, 'workflow_cd': 'WORKFLOW_SAMPLE_LOAD', 'application_id': '1'}}
+03/29/2022 05:03:30 PM | WORKFLOW_SAMPLE_LOAD | DEBUG | Executing method : __main__workflow YAML is:{'name': 'WORKFLOW_SAMPLE_LOAD', 'description': 'TESTING', 'steps': [{'step': [{'name': 'STEP_SAMPLE_LOAD'}]}]}
+03/29/2022 05:03:30 PM | root | INFO | Started execution of : Common.Logger._Metadata
+03/29/2022 05:03:30 PM | root | DEBUG | path value return from configreader function : C:\\Users\\lokesh\\PycharmProjects\\Octopus\App\\
+03/29/2022 05:03:30 PM | root | INFO |  Ended execution of : Common.Logger._Metadata
+03/29/2022 05:03:30 PM | root | INFO | Started execution of : Common.Logger._Metadata
+03/29/2022 05:03:30 PM | WORKFLOW_SAMPLE_LOAD | ERROR |  Error Message : Traceback (most recent call last):
+   File "C:\Users\lokesh\PycharmProjects\Octopus\Core\TaskParser\workflowreader.py", line 52, in workflowread
+    pathseparater = self.metaobj.configreader('DELIMITERFORPATH', 'delimeter')
+   File "C:\Users\lokesh\PycharmProjects\Octopus\Common\Logger\_Metadata.py", line 40, in configreader
+    path = str(filepath[configkey])
+ KeyError: 'delimeter'
+ 
+During handling of the above exception, another exception occurred:
+
+ Traceback (most recent call last):
+   File "C:/Users/lokesh/PycharmProjects/Octopus/WorkflowRunner.py", line 86, in yamlreader
+    self.workflowauditing(workflow_yaml, self.auditdict,None,argsdict)
+   File "C:\Users\lokesh\PycharmProjects\Octopus\Common\AuditProcess\Auditordecorator.py", line 19, in wrapped_f
+    retval=orginal_func(*args)
+   File "C:/Users/lokesh/PycharmProjects/Octopus/WorkflowRunner.py", line 45, in workflowauditing
+    return workflowreader.workflowread(my_dict,workflow_exec_id,argsdict, str(int(self.applicationid)),self.applicationname)
+   File "C:\Users\lokesh\PycharmProjects\Octopus\Core\TaskParser\workflowreader.py", line 138, in workflowread
+    self.audit_dict['message'] = exc_info
+ TypeError: list indices must be integers or slices, not str
+

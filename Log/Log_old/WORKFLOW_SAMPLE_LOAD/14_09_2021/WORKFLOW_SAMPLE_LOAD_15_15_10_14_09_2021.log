@@ -1,0 +1,4 @@
+09/14/2021 03:10:47 PM | WORKFLOW_SAMPLE_LOAD | INFO | starting the workflow name : WORKFLOW_SAMPLE_LOAD
+09/14/2021 03:10:47 PM | WORKFLOW_SAMPLE_LOAD | INFO | Aruguments Passed to workflow are {}
+09/14/2021 03:10:47 PM | WORKFLOW_SAMPLE_LOAD | DEBUG | Executing method : __main__workflow parameter are:{'workflow': {'workflow_id': 1, 'workflow_cd': 'WORKFLOW_SAMPLE_LOAD', 'application_id': '1'}}
+09/14/2021 03:10:47 PM | WORKFLOW_SAMPLE_LOAD | DEBUG | Executing method : __main__workflow YAML is:{'name': 'WORKFLOW_SAMPLE_LOAD', 'description': 'TESTING', 'steps': [{'step': [{'name': 'STEP_SAMPLE_LOAD'}]}]}

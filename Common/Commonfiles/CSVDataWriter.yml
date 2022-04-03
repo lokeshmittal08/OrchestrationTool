@@ -1,0 +1,16 @@
+name: CSVDataWriter
+description: 'CSV Data Writer'
+tasktype:
+  -
+    target:
+      -
+        file:
+          -
+            filetype: csv
+            description: 'data load from csv to csv '
+            inputsource: '{{INPUTSOURCEFORWRITER}}'
+            filename: '{{TARGETFILENAME}}'
+            delimiter: '{{TARGETDELIMITER}}'
+            filepath: '{{FILEPATH}}'
+            skipheader: '{{SKIPHEADER}}'
+

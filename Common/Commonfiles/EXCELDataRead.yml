@@ -1,0 +1,14 @@
+name: EXCELDataRead
+description: 'Fetch the data via sql'
+tasktype:
+  -
+    source:
+      -
+        file:
+          -
+            filetype: xlsx
+            description: 'data fetching '
+            sourceidentifier: '{{SOURCEIDENTIFIER}}'
+            filepath: '{{SOURCEFILEPATH}}'
+            filename: '{{SOURCEFILENAME}}'
+            pattern: '{{PATTERN}}'

@@ -1,0 +1,15 @@
+name: EXCELDataRead
+description: 'Fetch the data via sql'
+tasktype:
+  -
+    target:
+      -
+        file:
+          -
+            filetype: xlsx
+            description: 'data writing '
+            inputsource: '{{INPUTSOURCEFORWRITER}}'
+            filename: '{{FILENAME}}'
+            filepath: '{{FILEPATH}}'
+            sheetname: '{{SHEETNAME}}'
+            headerrequired: '{{READERREQUIRED}}'

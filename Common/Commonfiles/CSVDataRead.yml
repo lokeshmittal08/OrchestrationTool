@@ -1,0 +1,17 @@
+name: CSVDataRead
+description: 'Fetch the data '
+tasktype:
+  -
+    source:
+      -
+        file:
+          -
+            filetype: csv
+            description: 'data load from csv '
+            sourceidentifier: '{{SOURCEIDENTIFIER}}'
+            filepath: '{{SOURCEFILEPATH}}'
+            filename: '{{SOURCEFILENAME}}'
+            pattern: '{{PATTERN}}'
+            delimiter: '{{DELIMITER}}'
+            headeravailable: '{{HEADERAVAILABLE}}'
+            addfilenamecol: '{{ADDFILENAMECOL}}'

@@ -1,0 +1,7 @@
+name: WORKFLOW_SAMPLE_LOAD
+description: 'TESTING'
+steps:
+  -
+    step:
+      -
+        name: STEP_SAMPLE_LOAD
